@@ -119,7 +119,7 @@ std::string WordCount::makeValidWord(std::string word) {
 void WordCount::dumpWordsSortedByWord(std::ostream &out) const {
 
 	std::vector<std::pair<std::string, int>> wordList;
-	for (int i = 0; i < CAPACITY; i++) {
+	for (int i = 0; i < 100; i++) {
 		for (const auto &entry : table[i]) {
 			wordList.push_back(entry);
 		}
@@ -139,7 +139,7 @@ void WordCount::dumpWordsSortedByWord(std::ostream &out) const {
 void WordCount::dumpWordsSortedByOccurence(std::ostream &out) const {
 
 	std::vector<std::pair<std::string, int>> wordList;
-	for (int i = 0; i < CAPACITY; i++) {
+	for (int i = 0; i < 100; i++) {
 		for (const auto &entry : table[i]) {
 			wordList.push_back(entry);
 		}
